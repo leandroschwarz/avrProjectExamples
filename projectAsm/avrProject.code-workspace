@@ -1,0 +1,881 @@
+{
+    "folders": [
+        {
+            "name": "Project files",
+            "path": "."
+        }
+    ],
+    "settings": {
+        //
+        // =========================================================================
+        // Microsoft Visual Studio Code
+        // =========================================================================
+        //
+        "debug.inlineValues": "on",
+        "debug.openDebug": "openOnSessionStart",
+        "editor.cursorBlinking": "phase",
+        "editor.cursorSurroundingLines": 1,
+        "editor.cursorSurroundingLinesStyle": "all",
+        "editor.detectIndentation": false,
+        "editor.fontFamily": "Consolas, 'Courier New', monospace",
+        "editor.fontSize": 20,
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.minimap.renderCharacters": false,
+        "editor.minimap.showSlider": "always",
+        "editor.mouseWheelZoom": true,
+        "editor.multiCursorModifier": "ctrlCmd",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": false
+        },
+        "editor.renderLineHighlight": "all",
+        "editor.renderWhitespace": "all",
+        "editor.rulers": [
+            20,
+            40,
+            48,
+            56,
+            64,
+            72,
+            80
+        ],
+        "editor.scrollBeyondLastColumn": 5,
+        "editor.showFoldingControls": "always",
+        "editor.smoothScrolling": true,
+        "editor.snippetSuggestions": "top",
+        "editor.stickyTabStops": true,
+        "editor.suggestSelection": "recentlyUsed",
+        "editor.trimAutoWhitespace": false,
+        "editor.wrappingIndent": "deepIndent",
+        "explorer.openEditors.visible": 1,
+        "extensions.ignoreRecommendations": true,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "files.eol": "auto",
+        "files.exclude": {
+            "**/.git": true,
+            "**/.svn": true,
+            "**/.hg": true,
+            "**/CVS": true,
+            "**/.DS_Store": true,
+            "**/Thumbs.db": true
+        },
+        "files.insertFinalNewline": true,
+        "files.participants.timeout": 5000,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        "git.autofetch": true,
+        "markdown.preview.fontSize": 20,
+        "markdown.preview.openMarkdownLinks": "inEditor",
+        "markdown.validate.enabled": true,
+        "remote.restoreForwardedPorts": false,
+        "search.showLineNumbers": true,
+        "terminal.integrated.cursorBlinking": true,
+        "terminal.integrated.cursorStyle": "line",
+        "terminal.integrated.profiles.windows": {
+            "PowerShell": {
+                "source": "PowerShell",
+                "icon": "terminal-powershell"
+            },
+            "Command Prompt": {
+                "path": [
+                    "${env:windir}\\Sysnative\\cmd.exe",
+                    "${env:windir}\\System32\\cmd.exe"
+                ],
+                "args": [],
+                "icon": "terminal-cmd"
+            },
+            "Git Bash": {
+                "source": "Git Bash"
+            },
+            "Bash": {
+                "args": [
+                    "--login",
+                    "-i"
+                ],
+                "color": "terminal.ansiGreen",
+                "env": {
+                    "PATH": "${execPath}/../toolchains;${execPath}/../toolchains/astyle/bin;${execPath}/../toolchains/avrassembler;${execPath}/../toolchains/avrdude;${execPath}/../toolchains/avr-gcc/bin;${execPath}/../toolchains/git;${execPath}/../toolchains/git/bin;",
+                    "MSYS2_PATH_TYPE": "inherit",
+                    "CHERE_INVOKING": "1",
+                    "MSYSTEM": "MINGW64"
+                },
+                "icon": "terminal-bash",
+                "overrideName": true,
+                "path": "${execPath}/../toolchains/git/bin/bash.exe"
+            }
+        },
+        "terminal.integrated.defaultProfile.windows": "Bash",
+        "terminal.integrated.enableBell": true,
+        "terminal.integrated.minimumContrastRatio": 1,
+        "terminal.integrated.rightClickBehavior": "copyPaste",
+        "terminal.integrated.scrollback": 10000,
+        "terminal.integrated.shellIntegration.enabled": false,
+        "timeline.pageOnScroll": true,
+        "window.commandCenter": false,
+        "window.zoomLevel": 0,
+        "workbench.colorTheme": "Default Light+",
+        "workbench.colorCustomizations": {
+            "[Default Light+]": {
+                "tab.activeBorderTop": "#333333",
+                "tab.inactiveModifiedBorder": "#666666"
+            },
+            "[Default Dark+]": {
+                "editor.lineHighlightBackground": "#333333",
+                "editor.lineHighlightBorder": "#666666",
+            }
+        },
+        "workbench.editor.focusRecentEditorAfterClose": false,
+        "workbench.editor.highlightModifiedTabs": true,
+        "workbench.iconTheme": "vs-seti",
+        "workbench.list.horizontalScrolling": true,
+        "workbench.settings.editor": "json",
+        "workbench.settings.openDefaultKeybindings": true,
+        "workbench.settings.openDefaultSettings": true,
+        "workbench.sideBar.location": "right",
+        "workbench.tree.indent": 16,
+        "workbench.tree.renderIndentGuides": "always",
+        "workbench.view.alwaysShowHeaderActions": true,
+        "zenMode.restore": false,
+        //
+        // =========================================================================
+        // Language Specific
+        // =========================================================================
+        //
+        // C
+        "[c]": {
+            "editor.defaultFormatter": "chiehyu.vscode-astyle",
+            "editor.formatOnPaste": false,
+            "editor.formatOnSave": true,
+            "editor.formatOnSaveMode": "file",
+            "editor.formatOnType": false,
+            "editor.semanticHighlighting.enabled": true,
+            "editor.suggest.insertMode": "insert",
+            "editor.wordBasedSuggestions": false
+        },
+        //
+        // C++
+        "[cpp]": {
+            "editor.defaultFormatter": "chiehyu.vscode-astyle",
+            "editor.formatOnPaste": false,
+            "editor.formatOnSave": true,
+            "editor.formatOnSaveMode": "file",
+            "editor.formatOnType": false,
+            "editor.semanticHighlighting.enabled": true,
+            "editor.suggest.insertMode": "insert",
+            "editor.wordBasedSuggestions": false
+        },
+        //
+        // JSON
+        "[json]": {
+            "editor.defaultFormatter": "vscode.json-language-features",
+            "editor.formatOnPaste": false,
+            "editor.formatOnSave": true,
+            "editor.formatOnSaveMode": "file",
+            "editor.formatOnType": false,
+            "editor.quickSuggestions": {
+                "strings": true
+            },
+            "editor.suggest.insertMode": "insert"
+        },
+        "[jsonc]": {
+            "editor.defaultFormatter": "vscode.json-language-features",
+            "editor.formatOnPaste": false,
+            "editor.formatOnSave": true,
+            "editor.formatOnSaveMode": "file",
+            "editor.formatOnType": false,
+            "editor.quickSuggestions": {
+                "strings": true
+            },
+            "editor.suggest.insertMode": "insert"
+        },
+        //
+        // Makefile
+        "[makefile]": {
+            "editor.insertSpaces": false
+        },
+        //
+        // Markdown
+        "[markdown]": {
+            "editor.unicodeHighlight.ambiguousCharacters": false,
+            "editor.unicodeHighlight.invisibleCharacters": false,
+            "editor.wordWrap": "on",
+            "editor.quickSuggestions": {
+                "other": "on",
+                "comments": "off",
+                "strings": "off"
+            }
+        },
+        "[markdown-math]": {},
+        "[markdown_latex_combined]": {},
+        //
+        // Plain Text
+        "[plaintext]": {
+            "editor.unicodeHighlight.ambiguousCharacters": false,
+            "editor.unicodeHighlight.invisibleCharacters": false
+        },
+        //
+        // =========================================================================
+        // Extensions
+        // =========================================================================
+        //
+        //     //////////////////     AStyle formatter     //////////////////     //
+        "astyle.astylerc": "/home/schwarz/settings/.astylerc",
+        "astyle.executable": "/usr/bin/astyle",
+        //
+        //     /////////////////////     C/C++ Tools    /////////////////////     //
+        "C_Cpp.autoAddFileAssociations": false,
+        "C_Cpp.autocompleteAddParentheses": true,
+        "C_Cpp.codeAnalysis.exclude": {
+            "**/_docs /*": true,
+            "**/_hide /*": true,
+            "**/_temp /*": true,
+            "**/docs /*": true,
+            "**/temp /*": true
+        },
+        "C_Cpp.codeFolding": "enabled",
+        "C_Cpp.commentContinuationPatterns": [
+            "/**"
+        ],
+        "C_Cpp.configurationWarnings": "enabled",
+        "C_Cpp.default.cppStandard": "c++17",
+        "C_Cpp.default.cStandard": "c17",
+        "C_Cpp.files.exclude": {
+            "**/_docs /*": true,
+            "**/_hide /*": true,
+            "**/_temp /*": true,
+            "**/docs /*": true,
+            "**/temp /*": true
+        },
+        "C_Cpp.formatting": "disabled",
+        "C_Cpp.inactiveRegionOpacity": 0.45,
+        "C_Cpp.loggingLevel": "Warning",
+        "C_Cpp.vcFormat.indent.gotoLabels": "leftmostColumn",
+        "C_Cpp.vcFormat.indent.preserveComments": true,
+        //
+        //     /////////////////////     CSpell     /////////////////////     //
+        "cSpell.caseSensitive": true,
+        "cSpell.customDictionaries": {
+            "microcontroller-stm32": {
+                "name": "microcontroller-avr",
+                "path": "${workspaceFolder}/.cspell/microcontroller-avr.txt",
+                "addWords": true,
+                "scope": "workspace"
+            }
+        },
+        "cSpell.enabled": true,
+        "cSpell.ignoreWords": [
+            "Delisle",
+            "Doxygen",
+            "Leandro",
+            "Pinout",
+            "Reaumur",
+            "STRINGIFYING",
+            "USART",
+            "Uncategorized",
+            "__FUNSAPE_LIB_PINOUT_HPP",
+            "dataHword",
+            "endcond",
+            "pinout",
+            "prescaler"
+        ],
+        //
+        //     //////////////////////     CMake    //////////////////////     //
+        "cmake.configureOnOpen": false,
+        //
+        //     /////////     Doxygen Documentation Generator    /////////     //
+        "doxdocgen.c.commentPrefix": "//! ",
+        "doxdocgen.c.firstLine": "//!",
+        "doxdocgen.c.lastLine": "//!",
+        "doxdocgen.c.triggerSequence": "//!",
+        "doxdocgen.c.factoryMethodText": "Create a {name} object",
+        "doxdocgen.c.getterText": "Get the {name} object",
+        "doxdocgen.c.setterText": "Set the {name} object",
+        "doxdocgen.cpp.ctorText": "Construct a new {name} object",
+        "doxdocgen.cpp.dtorText": "Destroy the {name} object",
+        "doxdocgen.cpp.tparamTemplate": "\\tparam {param} ",
+        "doxdocgen.file.copyrightTag": [
+            "\\copyright Copyright (c) {year}"
+        ],
+        "doxdocgen.file.customTag": [],
+        "doxdocgen.file.fileOrder": [
+            "file",
+            "author",
+            "brief",
+            "version",
+            "date",
+            "empty",
+            "copyright",
+            "empty",
+            "custom"
+        ],
+        "doxdocgen.file.fileTemplate": "\\file {name}",
+        "doxdocgen.file.versionTag": "\\version 0.1",
+        "doxdocgen.generic.authorEmail": "you@domain.com",
+        "doxdocgen.generic.authorName": "your name",
+        "doxdocgen.generic.authorTag": "\\author {author} ({email})",
+        "doxdocgen.generic.boolReturnsTrueFalse": true,
+        "doxdocgen.generic.briefTemplate": "\\brief {text}",
+        "doxdocgen.generic.commandSuggestion": true,
+        "doxdocgen.generic.commandSuggestionAddPrefix": false,
+        "doxdocgen.generic.customTags": [
+            "\\details        "
+        ],
+        "doxdocgen.generic.dateFormat": "YYYY-MM-DD",
+        "doxdocgen.generic.dateTemplate": "\\date {date}",
+        "doxdocgen.generic.filteredKeywords": [],
+        "doxdocgen.generic.generateSmartText": true,
+        "doxdocgen.generic.includeTypeAtReturn": true,
+        "doxdocgen.generic.linesToGet": 20,
+        "doxdocgen.generic.order": [
+            "custom",
+            "tparam",
+            "param",
+            "return",
+        ],
+        "doxdocgen.generic.paramTemplate": "\\param {param} ",
+        "doxdocgen.generic.returnTemplate": "\\return {type} ",
+        "doxdocgen.generic.splitCasingSmartText": true,
+        "doxdocgen.generic.useGitUserEmail": false,
+        "doxdocgen.generic.useGitUserName": false,
+        //
+        //     /////////////////     Doxygen Runner     /////////////////     //
+        "doxygen_runner.configuration_file_override": "${workspaceFolder}/Doxyfile",
+        "doxygen_runner.view_after_generate": false,
+        //
+        //     ////////////////////     Makefile     ////////////////////     //
+        // "makefile.configurationCachePath": ".vscode/configurationCache.log",
+        // "makefile.extensionOutputFolder": "./.vscode",
+        // "makefile.makePath": "",
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "options": {
+            "env": {
+                "BUILD_DIR": "build",
+                "BUILD_NAME": "application",
+                "COMPILE_C_AS_CPP": "0",
+                "COMPILER_DEBUG": "0",
+                "COMPILER_OPT": "-O1", // -O1,
+                "COMPILER_PATH": "",
+                "COMPILER_STD_C": "gnu17",
+                "COMPILER_STD_CPP": "c++17",
+                "FUNSAPE_PATH": "XXXX",
+                "LIBRARY_PATH": "",
+                "MCU_DEVICE_CORE_FLOAT_ABI": "",
+                "MCU_DEVICE_CORE_FPU": "",
+                // "MCU_DEVICE_NAME": "STM32F103C8Tx", // atmega328p
+                "MCU_DEVICE_NAME": "atmega328p", //
+                "PROGRAMMER_CONFIG_FILE": "/etc/avrdude.conf",
+                // "PROGRAMMER_TYPE": "ST_FLASH", // arduino, ST_LINK_JTAG, ST_LINK_SWD
+                "PROGRAMMER_TYPE": "arduino", // arduino, ST_LINK_JTAG, ST_LINK_SWD
+                "USER_DEFINES_ASM": "",
+                "USER_DEFINES_C": "USE_HAL_DRIVER", // USE_HAL_DRIVER
+                "USER_DEFINES_CPP": "USE_HAL_DRIVER", // USE_HAL_DRIVER
+                "USER_FLAGS_ASM": "",
+                "USER_FLAGS_C": "-Wno-switch",
+                "USER_FLAGS_CPP": "-Wno-switch",
+                "USER_LIBS": ""
+            }
+        },
+        "tasks": [
+            // MCU assemble
+            {
+                "label": "MCU assemble",
+                "detail": "MCU - Assemble project",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "assemble"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU clean
+            {
+                "label": "MCU clean",
+                "detail": "MCU - Delete build files",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "clean"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU compile
+            {
+                "label": "MCU compile",
+                "detail": "MCU - Compile project",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "compile"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU program
+            {
+                "label": "MCU program",
+                "detail": "MCU - Write into device",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "program"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU flashErase
+            {
+                "label": "MCU flashErase",
+                "detail": "MCU - Erase device flash memory",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "flashErase"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU assemble/clean/program
+            {
+                "label": "MCU assemble/clean/program",
+                "detail": "MCU - Assemble project, delete build files and write into device",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "assembleCleanProgram"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU assemble/program
+            {
+                "label": "MCU assemble/program",
+                "detail": "MCU - Assemble project and write into device",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "assembleProgram"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU clean/assemble
+            {
+                "label": "MCU clean/assemble",
+                "detail": "MCU - Reassemble project",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "cleanAssemble"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU clean/assemble/clean/program
+            {
+                "label": "MCU clean/assemble/clean/program",
+                "detail": "MCU - Reassemble project, delete build files and write into device",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "cleanAssembleCleanProgram"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU clean/assemble/program
+            {
+                "label": "MCU clean/assemble/program",
+                "detail": "MCU - Reassemble project and write into device",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "cleanAssembleProgram"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU clean/compile
+            {
+                "label": "MCU clean/compile",
+                "detail": "MCU - Recompile project",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "cleanCompile"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU clean/compile/clean/program
+            {
+                "label": "MCU clean/compile/clean/program",
+                "detail": "MCU - Recompile project, delete build files and write into device",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "cleanCompileCleanProgram"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU clean/compile/program
+            {
+                "label": "MCU clean/compile/program",
+                "detail": "MCU - Recompile project and write into device",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "cleanCompileProgram"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU compile/clean/program
+            {
+                "label": "MCU compile/clean/program",
+                "detail": "MCU - Compile project, delete build files and write into device",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "compileCleanProgram"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU compile/program
+            {
+                "label": "MCU compile/program",
+                "detail": "MCU - Compile project and write into device",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "compileProgram"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            },
+            // MCU do Nothing
+            {
+                "label": "MCU Do Nothing",
+                "detail": "MCU - Do nothing. Use to evaluate makefile variables",
+                "command": "make",
+                "args": [
+                    {
+                        "quoting": "weak",
+                        "value": "doNothing"
+                    }
+                ],
+                "runOptions": {
+                    "instanceLimit": 1,
+                    "reevaluateOnRerun": true
+                },
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "type": "shell",
+                "group": "build",
+                "presentation": {
+                    "clear": true,
+                    "close": false,
+                    "echo": true,
+                    "focus": true,
+                    "panel": "shared",
+                    "reveal": "always",
+                    "revealProblems": "onProblem",
+                    "showReuseMessage": true
+                }
+            }
+        ]
+    }
+}
